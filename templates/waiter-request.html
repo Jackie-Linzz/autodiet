@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/waiter.css" />
+<link rel="stylesheet" href="../static/css/waiter-fix.css" />
+
+{% end %}
+
+
+
+{% block body %}
+
+  <div class="w-section w-clearfix request-header"><a class="button logout-button" href="javascript:void(0)">主页</a>
+    <h2 class="request-heading">请求</h2>
+  </div>
+  <div class="w-section request-content">
+    <div class="cook-request">
+      <div class="request-item cook-request-item">
+        <h3 class="request-item-heading">Heading</h3><a class="button request-item-button" href="#">Button Text</a>
+      </div>
+    </div>
+    <div class="customer-request">
+      <div class="request-item customer-request-item">
+        <h3 class="request-item-heading">Heading</h3><a class="button request-item-button" href="#">Button Text</a>
+      </div>
+      <div class="request-item customer-submit-item">
+        <h3 class="request-item-heading">Heading</h3><a class="button request-item-button" href="#">Button Text</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-section w-clearfix request-footer">
+    <div class="request-footer-left"><a class="button request-footer-button-left" href="javascript:void(0)">传送</a>
+    </div>
+    <div class="request-footer-right"><a class="button request-footer-button-right" href="javascript:void(0)">点单</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/waiter-request.js"></script>
+
+
+
+{% end %}

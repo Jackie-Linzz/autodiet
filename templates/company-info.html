@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/css/company-info.css" />
+</head>
+<body>
+<div class="wrapper">
+    <table>
+        <caption>企业信息</caption>
+        <tr>
+            <td>全称：</td>
+            <td><input type="text" class="company-name"/></td>
+        </tr>
+        <tr>
+            <td>简称：</td>
+            <td><input type="text" class="company-shortname"/></td>
+        </tr>
+        <tr>
+            <td>位置：</td>
+            <td><input type="text" class="company-location"/></td>
+        </tr>
+
+        <tr>
+            <td>欢迎信息：</td>
+            <td><textarea rows="2" class="company-welcome"></textarea></td>
+        </tr>
+        <tr>
+            <td>介绍：</td>
+            <td><textarea rows="4" class="company-desc"></textarea></td>
+        </tr>
+        <tr><td colspan="2"><a href="javascript:void(0)" class="button-submit" id="company-button">确认</a></td></tr>
+        <tr><td colspan="2"><a href="javascript:void(0)"  id="company-refresh">刷新</a></td></tr>
+    </table>
+
+</div>
+    <script src="/static/libs/jquery-1.11.2.min.js"></script>
+    <script src="/static/libs/jquery.mobile.custom.min.js"></script>
+    <script src="/static/js/base.js"></script>
+    <script src="/static/js/company-info.js"></script>
+
+
+</body>
+
+

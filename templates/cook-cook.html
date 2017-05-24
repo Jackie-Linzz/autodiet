@@ -1,0 +1,54 @@
+
+{% extends 'main.html'%}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/cook.css" />
+<link rel="stylesheet" href="../static/css/cook-fix.css" />
+<script src="/static/js/cook-cook.js"></script>
+{% end %}
+
+{% block body%}
+
+<div data-role="page" id="cook-cook">
+  <div class="w-section left">
+    <div class="left-header">
+      <h3 class="left-heading">正在做</h3>
+    </div>
+    <div class="left-content">
+      <div class="doing-item">
+        <h3 class="doing-item-name">Heading</h3>
+        <h6 class="doing-item-num">Heading</h6>
+        <div>This is some text inside of a div block.</div>
+        <a class="button doing-item-button" href="#">完成</a>
+        <a class="button doing-item-button-cancel" href="#">X</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-section middle">
+    <div class="current-item">
+      <h2 class="current-item-name">Heading</h2>
+      <h4 class="current-item-num">Heading</h4>
+      <div class="current-item-demand">dfg</div>
+    </div><a class="button current-button-accept" href="#">接受</a>
+    <div class="middle-footer">
+        <a class="button current-button-refuse" href="#">拒绝</a>
+        <a class="button current-button-call" href="#">有问题</a>
+    </div>
+  </div>
+  <div class="w-section right">
+    <div class="right-header">
+      <h3 class="right-heading">顺带</h3>
+    </div>
+    <div class="right-content">
+      <div class="byway-item">
+        <h3 class="byway-item-name">Heading</h3>
+        <h6 class="byway-item-num">Heading</h6>
+        <div class="byway-item-demand">This is some text inside of a div block.</div>
+        <a class="button byway-item-button" href="#">选择</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% end %}

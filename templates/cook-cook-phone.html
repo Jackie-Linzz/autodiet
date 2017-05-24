@@ -1,0 +1,34 @@
+
+{% extends 'main.html'%}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/cook.css" />
+<link rel="stylesheet" href="../static/css/cook-fix.css" />
+
+{% end %}
+
+{% block body%}
+
+  <a class="button button-other" href="javascript:void(0)">...</a>
+  <div class="current-item">
+    <h2 class="current-item-name">Heading</h2>
+    <h4 class="current-item-num">Heading</h4>
+    <div class="current-item-demand"></div>
+  </div>
+  <div class="div-byway">
+    <div class="byway-item byway-item-selected">
+      <h3 class="byway-item-name">Heading</h3>
+      <h6 class="byway-item-num">Heading</h6>
+      <div class="byway-item-demand">This is some text inside of a div block.</div><a class="button byway-item-button byway-item-button-selected" href="#">Button Text</a>
+    </div>
+    <div class="byway-item">
+      <h3 class="byway-item-name">Heading</h3>
+      <h6 class="byway-item-num">Heading</h6>
+      <div class="byway-item-demand">This is some text inside of a div block.</div><a class="button byway-item-button" href="#">Button Text</a>
+    </div>
+  </div><a class="button button-accept" href="javascript:void(0)">接受</a>
+
+  <script type="text/javascript" src="/static/js/cook-cook-phone.js"></script>
+
+{% end %}

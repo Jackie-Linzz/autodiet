@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/customer.css" />
+<link rel="stylesheet" href="../static/css/customer-fix.css" />
+
+{% end %}
+
+{% block body%}
+  <div class="o-header">
+    <h2 class="order-header-heading">我的点单</h2>
+    <a class="button show-history-button" href="javascript:void(0)">以前</a>
+  </div>
+  <div class="order-content">
+    <div class="order-item">
+      <div class="w-clearfix order-item-row">
+        <div class="order-item-name">
+          <h4 class="order-item-name-heading">Heading</h4>
+        </div>
+        <div class="order-item-num">
+          <h4 class="order-item-num-heading">Heading</h4>
+        </div>
+        <div class="order-item-price">
+          <h4 class="order-item-price-heading">Heading</h4>
+        </div>
+      </div>
+      <div class="w-clearfix order-item-row">
+        <div class="order-item-demand">This is some text inside of a div block.</div>
+        <div class="order-item-x"><a class="button order-item-button-x" href="#">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="order-item order-item-last">
+      <h4 class="order-item-price-heading">0</h4>
+    </div>
+  </div>
+  <div class="w-form">
+    <form id="email-form" >
+      <textarea class="w-input order-gdemand"  placeholder="总体口味要求" ></textarea>
+    </form>
+
+  </div>
+  <div class="info">显示信息</div>
+  <div class="w-clearfix o-footer">
+    <div class="footer-left">
+      <a class="button footer-button-left" href="javascript:void(0)">食谱</a>
+    </div>
+    <div class="footer-right">
+      <a class="button footer-button-right" href="javascript:void(0)">下单</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/customer-order.js"></script>
+
+{% end %}

@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/customer.css" />
+<link rel="stylesheet" href="../static/css/customer-fix.css" />
+<script src="/static/js/customer-overlay.js"></script>
+{% end %}
+
+
+
+{% block body %}
+
+  <div class="overlay-content">
+    <h2 class="overlay-heading">Heading</h2>
+    <img class="overlay-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" alt="image-placeholder.svg">
+    <div class="overlay-desc">This is some text inside of a div block.</div>
+    <h4 class="overlay-price">Heading</h4>
+    <h4 class="overlay-num">Heading</h4>
+    <div class="w-form">
+      <form id="email-form" name="email-form" data-name="Email Form">
+        <textarea class="w-input overlay-demand" id="field" placeholder="Example Text" name="field"></textarea>
+      </form>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
+      </div>
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form :(</p>
+      </div>
+    </div>
+    <div class="overlay-footer">
+      <div class="overlay-footer-left"><a class="button overlay-confirm" href="javascript:void(0)">点</a>
+      </div>
+      <div class="overlay-footer-right"><a class="button overlay-cancel" href="javascript:void(0)">返回</a>
+      </div>
+    </div>
+  </div>
+  <script src="/static/js/customer-overlay.js"></script>
+
+{% end %}

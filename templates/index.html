@@ -1,0 +1,63 @@
+{% extends 'main.html' %}
+
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="/static/css/customer.css" />
+<link rel="stylesheet" href="/static/css/customer-fix.css" />
+<link rel="stylesheet" href="/static/css/index.css">
+
+<script type="text/javascript" src="/static/libs/jsqrcode/grid.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/version.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/detector.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/formatinf.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/errorlevel.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/bitmat.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/datablock.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/bmparser.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/datamask.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/rsdecoder.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/gf256poly.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/gf256.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/decoder.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/qrcode.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/findpat.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/alignpat.js"></script>
+<script type="text/javascript" src="/static/libs/jsqrcode/databr.js"></script>
+
+{% end %}
+
+{% block body %}
+
+
+  <div class="w-section entry-header">
+    <h2 class="entry-heading">Heading</h2>
+  </div>
+  <div class="w-section entry-content">
+    <div class="welcome">
+      <p class="welcome-p">Lorem ipsum dolor sit a</p>
+    </div>
+  </div>
+  <div class="w-section login">
+    <div class="qrcode">
+        <div class="cover"><p>点我扫描餐桌二维码</p></div>
+        <video id="video" width="200" height="200" style="display: none; width:200px;height:200px;" autoplay></video>
+        <canvas id="qr-canvas" width="200" height="200" style="display: none; width:200px;height:200px;"></canvas>
+    </div>
+
+    <div class="manual">
+      <div class="w-form">
+
+        <form id="email-form" name="email-form" >
+          <input class="w-input desk-input" id="email"  placeholder="请输入您的餐桌号"  required="required">
+          <a class="button desk-button" href="javascript:void(0)">就餐愉快</a>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/js/index.js"></script>
+  <!-- <script src="http://192.168.1.4:8080/target/target-script-min.js#anonymous"></script> -->
+
+{% end %}

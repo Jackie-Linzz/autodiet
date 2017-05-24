@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/customer.css" />
+<link rel="stylesheet" href="../static/css/customer-fix.css" />
+
+{% end %}
+
+
+
+{% block body %}
+
+
+  <div class="order-content order-history">
+    <h4 class="order-history-heading">Heading</h4>
+    <div class="order-item">
+      <div class="w-clearfix order-item-row">
+        <div class="order-item-name">
+          <h4 class="order-item-name-heading">Heading</h4>
+        </div>
+        <div class="order-item-num">
+          <h4 class="order-item-num-heading">Heading</h4>
+        </div>
+        <div class="order-item-price">
+          <h4 class="order-item-price-heading">Heading</h4>
+        </div>
+      </div>
+      <div class="w-clearfix order-item-row">
+        <div class="order-item-demand">This is some text inside of&nbsp;</div>
+        <div class="order-item-x"><a class="button order-item-button-x" href="#">Button Text</a>
+        </div>
+      </div>
+    </div>
+    <div class="order-item order-item-last">
+      <h4 class="order-item-price-heading">Heading</h4>
+    </div>
+  </div><a class="button button-back" href="javascript:void(0)">Button Text</a>
+  <script type="text/javascript" src="/static/js/customer-history.js"></script>
+
+
+
+{% end %}

@@ -1,0 +1,328 @@
+* {
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f1f4f9;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+
+}
+
+.category-manage, .diet-manage, .faculty-manage, .history  {
+    display: none;
+}
+
+
+.navbar {
+    background-color: #369;
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+a { text-decoration: none;}
+ul.nav {
+    display: block;
+    margin-left: 80px;
+}
+
+ul.nav > li{
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+
+    margin: 10px 2px;
+    line-height: 24px;
+}
+.nav-item > a {
+    display: block;
+    padding: 8px 0;
+    color: #fff;
+    width: 100px;
+
+}
+
+ul.nav-item-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    color: white;
+    font-size: 16px;
+    background-color: transparent;
+
+}
+ul.nav-item-content > li > a {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 6px 0;
+    color: white;
+}
+
+input {
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+}
+.category-refresh, .diet-refresh, .faculty-refresh {
+    display: block;
+    margin: 50px auto auto 0;
+    padding: 5px 0;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #9cf;
+
+
+}
+
+table caption {
+    color: #369;
+    margin-bottom: 20px;
+}
+.company-info  {
+
+    padding-top: 80px;
+
+}
+.company-info .wrapper{
+    margin: 0  auto;
+}
+
+.company-info table{
+    margin: 0 auto;
+    padding:  20px;
+    border-spacing: 10px;
+    border-radius: 8px;
+    line-height: 24px;
+    vertical-align: top;
+    background-color: #9cf;
+}
+.company-info tr{
+    padding: 5px 0;
+
+}
+
+input[type=text] {
+    line-height: 24px;
+    font-size: 18px;
+    padding: 2px  0;
+    border-radius: 4px;
+}
+input[type=file] {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 2px  0;
+    border-radius: 4px;
+}
+
+.company-info input {
+    line-height: 24px;
+    font-size: 18px;
+    padding: 2px  0;
+    border-radius: 4px;
+    min-width: 350px;
+}
+.company-info .button-submit{
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: #a1d2ff;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.category-manage{
+    padding-top: 80px;
+}
+
+.category-manage .category-form {
+    line-height: 24px;
+}
+.category-manage .category-form table {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.category-manage input {
+    margin: 0 auto;
+    line-height: 20px;
+    font-size: 16px;
+    padding: 2px 0;
+    border-radius: 4px;
+    min-width: 200px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.add input[type=file] {
+    font-size: 14px;
+    max-width:200px;
+}
+.add input[type=submit]{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+
+}
+
+.category-manage .query table {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.category-manage .query table td{
+    min-width: 180px;
+}
+
+
+.add{
+    padding-top:80px;
+}
+.query {
+    padding-top: 80px;
+}
+
+.diet-form table {
+    margin: 0 auto;
+    padding: 10px;
+    border-spacing: 5px;
+    background-color: #9cf;
+    border-radius: 5px;
+}
+.diet-form input {
+    padding: 3px 0;
+    width: 120px;
+    line-height: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.diet-form td:nth-child(7) input{
+    width:200px;
+}
+.diet-form input[type=file] {
+    width: 200px;
+}
+.diet-form input[type=submit] {
+    display: block;
+    width: 180px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+
+}
+.diet-manage .query table {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.diet-manage .query table td {
+    width: 120px;
+    overflow: hidden;
+}
+.diet-manage .query table td:nth-child(8) {
+    width: 80px;
+    overflow: hidden;
+}
+.diet-manage .query table td:nth-child(9) {
+    width: 80px;
+    overflow: hidden;
+}
+.diet-manage .query table input{
+    width: 220px;
+
+}
+.diet-manage .query table a{
+    width: 80px;
+}
+
+.faculty-manage .add table{
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 8px;
+}
+
+.faculty-form table input {
+
+
+    width: 180px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+
+}
+.faculty-form table input[type=button] {
+    display: block;
+    margin: 5px 0 auto auto;
+    padding: 2px 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.faculty-detail table {
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 8px;
+}
+.faculty-detail td {
+    width: 120px;
+}
+
+.company-info input[type=text],
+.category-manage input[type=text],
+.diet-manage input[type=text],
+.faculty-manage input[type=text]{
+    background-color: transparent;
+    border: 1px solid white;
+}

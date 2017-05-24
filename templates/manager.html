@@ -1,0 +1,273 @@
+{% extends 'main.html'%}
+{% block head %}
+<title></title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/static/css/manager.css" />
+{% end %}
+{% block body %}
+    <section class="manager-header">
+        <div class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)"  class="nav-item-heading" id="info-link">企业信息</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#"  class="nav-item-heading">食谱管理</a>
+                    <ul class = "nav-item-content">
+                        <li><a href="#" id="category-link">食谱类别</a></li>
+                        <li><a href="#" id="diet-link">食谱详细</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)"  class="nav-item-heading" id="desk-link">餐桌管理</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)"  class="nav-item-heading" id="faculty-link">员工管理</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)"  class="nav-item-heading" id="history-link">流水查询</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)"  class="nav-item-heading" id="logout">退出登录</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)"  class="nav-item-heading" id="shutdown">关闭系统</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="manager-content">
+        <div class="company-info">
+            <iframe src="/company-info" frameborder="0" seamless="seamless" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+        <div class="category-manage">
+            <div class="add">
+                <iframe src="/category-add" frameborder="0" seamless="seamless" allowtransparency="true" scrolling="no"></iframe>
+                <a href="#current-category" class="category-refresh">刷新当前类别</a>
+            </div>
+            <div class="query" id="current-category">
+                <div class="wrapper category-detail">
+                    <table>
+                        <caption>当前类别</caption>
+                        <thead>
+                        <tr>
+                            <td>编号</td>
+                            <td>名称</td>
+                            <td>顺序</td>
+                            <td>介绍</td>
+                            <td>图片</td>
+                            <td>删除</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>id</p></td>
+                            <td><p>id</p></td>
+                            <td><p>id</p></td>
+                            <td><p>id</p></td>
+                            <td><a href="#">查看</a></td>
+                            <td><a href="#" class="button-del">X</a> </td>
+
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="diet-manage">
+            <div class="add">
+                <iframe src="/diet-add" frameborder="0" seamless="seamless" allowtransparency="true" scrolling="no"></iframe>
+                <a href="#current-diet" class="diet-refresh">刷新当前食谱</a>
+            </div>
+            <div class="query" id="current-diet">
+                <div class="diet-detail">
+                    <table>
+                        <caption>当前食谱</caption>
+                        <thead>
+                        <tr>
+                            <td>编号</td>
+                            <td>名称</td>
+                            <td>价格</td>
+
+                            <td>基数</td>
+                            <td>类别</td>
+                            <td>顺序</td>
+                            <td>介绍</td>
+                            <td>图片</td>
+                            <td>删除</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>d</p></td>
+                            <td><p>d</p></td>
+                            <td><p>d</p></td>
+                            <td><p>d</p></td>
+                            <td><p>d</p></td>
+                            <td><p>d</p></td>
+                            <td><input type="text" /></td>
+                            <td><a href="#">查看</a> </td>
+                            <td><a href="#" class="button-del">X</a> </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="desk-manage">
+            <div class="add">
+                <table>
+                    <tr>
+                        <td>餐桌号</td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="text" required="required" class="desk-input" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="添加" class="desk-button"></td>
+                    </tr>
+                </table>
+                <a href="#current-desks" class="desks-refresh">刷新</a>
+                <form action="/qrcode-download" method="POST">
+                    <input type="submit" value="下载所有" class="qrcode-download">
+                </form>
+
+            </div>
+            <div class="query">
+                <div class="desk-detail" id="current-desks">
+                    <div class="desk-item">
+                        <h4 class="desk-item-heading">num</h4>
+                        <img src="/static/pictures/xia.jpg" alt="no image" class="desk-item-image"/>
+                        <a href="javascript:void(0)" class="desk-item-del">删除</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faculty-manage">
+            <div class="add">
+                <iframe src="/faculty-add" frameborder="0" seamless="seamless" allowtransparency="true" scrolling="no"></iframe>
+                <a href="#current-faculty" class="faculty-refresh">刷新</a>
+            </div>
+            <div class="query" id="current-faculty">
+                <div class="faculty-detail">
+                    <table>
+                        <caption>新员工</caption>
+                        <thead>
+                        <tr>
+                            <td>编号</td>
+                            <td>名称</td>
+                            <td>角色</td>
+                            <td>密码</td>
+                            <td>删除</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>1</p></td>
+                            <td><p>2</p></td>
+                            <td><p>3</p></td>
+                            <td><p>4</p></td>
+                            <td><a href="#" class="button-del">X</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="add">
+                <table>
+                    <caption>流水查询</caption>
+                    <tr>
+                        <td><input type="text" required="required" class="year_from"/>年</td>
+                        <td><input type="text" required="required" class="month_from"/>月</td>
+                        <td><input type="text" required="required" class="day_from"/>日</td>
+                        <td>------</td>
+                        <td><input type="text" required="required" class="year_to"/>年</td>
+                        <td><input type="text" required="required" class="month_to"/>月</td>
+                        <td><input type="text" required="required" class="day_to"/>日</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="7"><a href="javascript:void(0)" class="history-button">查询</a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="query" >
+                <div id="order-detail">
+                    <table>
+                        <caption>食谱统计</caption>
+                        <thead>
+                        <tr>
+                            <td>编号</td>
+                            <td>名称</td>
+                            <td>价格</td>
+                            <td>数量</td>
+                            <td>总价</td>
+                            <td>百分比</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p class="id">1</p></td>
+                            <td><p class="name">2</p></td>
+                            <td><p class="price">3</p></td>
+                            <td><p class="num">4</p></td>
+                            <td><p class="total">5</p></td>
+                            <td><p class="percent">6</p></td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div id="cook-detail">
+                    <table>
+                        <caption>厨师统计</caption>
+                        <thead>
+                        <tr>
+                            <td>编号</td>
+                            <td>名称</td>
+                            <td>数量</td>
+                            <td>总价</td>
+                            <td>百分比</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p class="id">1</p></td>
+                            <td><p class="name">2</p></td>
+                            <td><p class="num">4</p></td>
+                            <td><p class="val">5</p></td>
+                            <td><p class="percent">6</p></td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div id="trend-detail">
+                    <h4>趋势统计</h4>
+                    <canvas id="trend"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="manager-footer"></section>
+    <script src="/static/libs/Chart.min.js"></script>
+    <script src="/static/js/manager.js"></script>
+{% end %}

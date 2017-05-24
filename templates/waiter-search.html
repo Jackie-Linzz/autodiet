@@ -1,0 +1,52 @@
+
+
+
+
+
+{% extends 'main.html'%}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/waiter.css" />
+<link rel="stylesheet" href="../static/css/waiter-fix.css" />
+
+{% end %}
+
+{% block body%}
+<div data-role="page" id="waiter-search">
+<a class="button search-back-button" href="javascript:void(0)">返回</a>
+  <div class="w-section s-content">
+    <div class="s-header">
+      <div class="w-form s-form-wrapper">
+        <form class="s-form" id="email-form-2" name="email-form-2" data-name="Email Form 2">
+          <input class="w-input search-text" id="name-2" type="text" placeholder="请输入编号" name="name-2" data-name="Name 2">
+        </form>
+
+      </div>
+    </div>
+    <div class="s-items">
+      <div class="d-item">
+        <div class="w-clearfix d-item-row">
+          <div class="d-item-name">
+            <h3 class="d-item-name-heading">Heading</h3>
+          </div>
+          <div class="d-item-price">
+            <h3 class="d-item-price-heading">Heading</h3>
+          </div>
+          <div class="d-item-num">
+            <h3 class="d-item-num-heading">Heading</h3>
+          </div>
+          <div class="d-item-button"><a class="button d-item-button-confirm" href="#">Button Text</a>
+          </div>
+        </div>
+        <div class="w-clearfix d-item-row">
+          <div class="d-item-demand">This is some text inside of a div&nbsp;</div>
+          <div class="d-item-btn"><a class="button d-item-button-cancel" href="#">Button Text</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/static/js/waiter-search.js"></script>
+</div> <!---page waiter-detail-->
+{% end %}

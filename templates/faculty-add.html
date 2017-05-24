@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/css/faculty-add.css" />
+</head>
+<body>
+<form class="faculty-form" action="/faculty-add" method="POST" >
+    <table>
+        <caption>新员工</caption>
+
+        <tbody>
+        <tr>
+            <td>编号</td>
+            <td><input type="text" name="id" class="faculty-id" required="required"/></td>
+        </tr>
+        <tr>
+            <td>名称</td>
+            <td><input type="text" name="name" class="faculty-name" required="required"/></td>
+        </tr>
+        <tr>
+            <td>角色</td>
+            <td><input type="text" name="role" class="faculty-role" required="required"/></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="text" name="password" class="faculty-password" required="required"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" class="faculty-submit" value="提交"/> </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+    <script src="/static/libs/jquery-1.11.2.min.js"></script>
+    <script src="/static/libs/jquery.mobile.custom.min.js"></script>
+    <script src="/static/js/base.js"></script>
+
+</body>
+</html>

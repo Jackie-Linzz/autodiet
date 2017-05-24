@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/customer.css" />
+<link rel="stylesheet" href="../static/css/customer-fix.css" />
+
+{% end %}
+
+
+
+{% block body %}
+
+  <header class="w-section c-header" id="cheader" >
+    <h3 class="c-header-heading">食谱</h3><a class="button button-logout" href="javascript:void(0)">退出</a>
+  </header>
+  <section class="w-section c-content">
+    <div class="c-item">
+      <h3 class="c-item-heading">Heading</h3>
+      <h6 class="c-item-num">Heading</h6>
+    </div>
+  </section>
+  <footer class="w-section w-clearfix c-footer">
+    <div class="footer-left"><a class="button footer-button-left" href="javascript:void(0)">呼叫</a>
+    </div>
+    <div class="footer-right"><a class="button foot-button-right" href="javascript:void(0)">我的点单</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="/static/js/customer-category.js"></script>
+
+
+
+{% end %}

@@ -1,0 +1,48 @@
+
+{% extends 'main.html'%}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/waiter.css" />
+<link rel="stylesheet" href="../static/css/waiter-fix.css" />
+
+{% end %}
+
+{% block body%}
+
+
+  <div class="w-section d-header">
+    <h2 class="d-header-heading">Heading</h2>
+  </div>
+  <div class="w-section d-content">
+      <div class="d-item">
+        <div class="w-clearfix d-item-row">
+          <div class="d-item-name">
+            <h3 class="d-item-name-heading">Heading</h3>
+          </div>
+          <div class="d-item-price">
+            <h3 class="d-item-price-heading">Heading</h3>
+          </div>
+          <div class="d-item-num">
+            <h3 class="d-item-num-heading">Heading</h3>
+          </div>
+          <div class="d-item-button"><a class="button d-item-button-confirm" href="#">Button Text</a>
+          </div>
+        </div>
+        <div class="w-clearfix d-item-row">
+          <div class="d-item-demand">This is some text inside of a div&nbsp;</div>
+          <div class="d-item-btn"><a class="button d-item-button-cancel" href="#">Button Text</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="w-section w-clearfix d-footer">
+    <div class="d-footer-left"><a class="button d-footer-button-left" href="javascript:void(0)">返回</a>
+    </div>
+    <div class="d-footer-right"><a class="button d-footer-button-right" href="javascript:void(0)">点单</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/waiter-detail.js"></script>
+
+
+{% end %}

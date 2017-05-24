@@ -1,0 +1,316 @@
+* {
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f1f4f9;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+
+}
+iframe {
+    display: block;
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+.category-manage, .diet-manage, .faculty-manage, .history  {
+    display: none;
+}
+
+
+.navbar {
+    background-color: #369;
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+a { text-decoration: none;}
+ul.nav {
+    display: block;
+    margin-left: 80px;
+}
+
+ul.nav > li{
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+
+    margin: 10px 2px;
+    line-height: 24px;
+}
+.nav-item > a {
+    display: block;
+    padding: 8px 0;
+    color: #fff;
+    width: 100px;
+
+}
+
+ul.nav-item-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    color: white;
+    font-size: 16px;
+    background-color: transparent;
+
+}
+ul.nav-item-content > li > a {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 6px 0;
+    color: white;
+}
+
+
+a {
+    color: white;
+}
+.category-refresh, .diet-refresh, .faculty-refresh, .desks-refresh {
+    display: block;
+    margin: 50px auto auto 0;
+    padding: 5px 0;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #9cf;
+
+
+}
+.qrcode-download {
+    display: block;
+    margin: 20px auto auto 0;
+    padding: 5px 0;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #9cf;
+}
+
+table {
+    margin: 0 auto;
+    padding:  20px;
+    border-spacing: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: top;
+    background-color: #9cf;
+}
+caption {
+    color: #369;
+    margin-bottom: 20px;
+}
+input {
+    margin: 0 auto;
+    padding: 2px 0;
+    line-height: 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    min-width: 200px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+input[type=file] {
+    font-size: 14px;
+    max-width:200px;
+}
+input[type=submit]{
+    display: block;
+    width: 100%;
+
+}
+.company-info  {
+
+    padding-top: 80px;
+
+}
+
+input[type=file] {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 2px  0;
+    border-radius: 4px;
+}
+
+.category-manage{
+    padding-top: 80px;
+}
+
+.category-manage .query table {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+.category-manage .query table td{
+    min-width: 180px;
+}
+
+
+.add{
+    padding-top:80px;
+}
+.query {
+    padding-top: 80px;
+}
+
+
+.diet-manage .query table {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-spacing: 10px;
+    background-color: #9cf;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.diet-manage .query table td {
+    width: 120px;
+    overflow: hidden;
+}
+.diet-manage .query table td:nth-child(8) {
+    width: 80px;
+    overflow: hidden;
+}
+.diet-manage .query table td:nth-child(9) {
+    width: 80px;
+    overflow: hidden;
+}
+.diet-manage .query table input{
+    width: 220px;
+
+}
+.diet-manage .query table a{
+    width: 80px;
+}
+
+
+
+.faculty-detail table {
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 20px;
+    background-color: #9cf;
+    border-radius: 8px;
+}
+.faculty-detail td {
+    width: 120px;
+}
+
+.history {
+
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.history .add {
+    color: #369;
+}
+.history .add table {
+    background-color: transparent;
+}
+.history .add input {
+    width: 150px;
+    min-width: 80px;
+    text-align: center;
+    color: #369;
+    border: 1px solid #369;
+
+}
+.history .add a{
+    display: block;
+
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #369;
+}
+
+.history .query table {
+    color: #414a51;
+    background-color: transparent;
+    border: 1px solid #414a51;
+}
+
+.history .query > div {
+    margin: 40px 0;
+}
+
+
+.history .query p {
+    min-width: 180px;
+    text-align: center;
+}
+#trend-detail h4 {
+    font-weight: 400;
+    color: #369;
+}
+
+#trend {
+    width: 100%;
+    height: 400px;
+    color: #369;
+    background-color: transparent;
+}
+
+.desk-manage table{
+    padding: 5px 10px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+.desk-manage table input {
+    width: 350px;
+    text-align: center;
+}
+
+.desk-item {
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    color: #414a51
+
+}
+.desk-item-image {
+    width: 100%;
+}
+.desk-item-del {
+    display: block;
+    color: #414a51
+}
+
+

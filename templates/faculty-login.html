@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/faculty.css" />
+
+
+{% end %}
+
+
+{% block body %}
+<div data-role="page"  id="faculty-login">
+
+  <div class="login-wrapper">
+    <h3>登录</h3>
+    <div class="w-form">
+      <form id="faculty-login-form"  >
+        <label class="label-name" for="name">编号</label>
+        <input class="w-input" id="name" type="text" placeholder="请输入您的编号" name="name" data-name="Name" required="required">
+        <label class="label-name" for="email">密码</label>
+        <input class="w-input" id="password" type="password" placeholder="请输入您的密码" name="email" data-name="Email" required="required">
+        <a class="button button-submit" href="#">登录</a>
+      </form>
+
+    </div>
+  </div>
+ <script src="/static/js/faculty-login.js"></script>
+</div><!-- /page category -->
+
+{% end %}

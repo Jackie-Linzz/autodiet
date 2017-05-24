@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/customer.css" />
+<link rel="stylesheet" href="../static/css/customer-fix.css" />
+
+{% end %}
+
+
+
+{% block body %}
+
+  <div class="d-header">
+    <h3 class="d-header-heading">Heading</h3>
+  </div>
+  <div class="w-clearfix d-content">
+    <div class="detail-left">
+      <div class="detail-item">
+        <img class="detail-item-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" alt="image-placeholder.svg">
+        <h2 class="detail-item-heading">Heading</h2>
+        <h5 class="detail-item-price">Heading</h5>
+        <h6 class="detail-item-num">Heading</h6><a class="button detail-item-button" href="#">Button Text</a>
+      </div>
+    </div>
+    <div class="detail-right">
+      <div class="detail-item"><img class="detail-item-image" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" alt="image-placeholder.svg">
+        <h2 class="detail-item-heading">Heading</h2>
+        <h5 class="detail-item-price">Heading</h5><a class="button detail-item-button" href="#">Button Text</a>
+        <h6 class="detail-item-num">Heading</h6>
+      </div>
+    </div>
+  </div>
+  <div class="w-clearfix d-footer">
+    <div class="foot-left"><a class="button footer-button-left" href="javascript:void(0)">返回</a>
+    </div>
+    <div class="footer-right"><a class="button footer-button-right" href="javascript:void(0)">我的点单</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/customer-detail.js"></script>
+
+
+
+{% end %}

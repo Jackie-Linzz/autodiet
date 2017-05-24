@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/css/category-add.css" />
+</head>
+<body>
+<form class="category-form" action="/category-add" method="POST" enctype="multipart/form-data">
+    <table>
+        <caption>添加类别</caption>
+        <tbody>
+        <tr>
+            <td>编号</td>
+            <td><input type="number" name="id" required="required"/></td>
+        </tr>
+        <tr>
+            <td>名称</td>
+            <td><input type="text" name="name" required="required"/></td>
+        </tr>
+        <tr>
+            <td>顺序</td>
+            <td><input type="number" name="order" required="required"/></td>
+        </tr>
+        <tr>
+            <td>介绍</td>
+            <td><input type="text" name="desc" /></td>
+        </tr>
+        <tr>
+            <td>图片</td>
+            <td><input type="file" name="picture"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" id="category-submit"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+    <script src="/static/libs/jquery-1.11.2.min.js"></script>
+    <script src="/static/libs/jquery.mobile.custom.min.js"></script>
+    <script src="/static/js/base.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.cover {
+    display: block;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #fc9;
+}
+
+.cover, #video, canvas {
+
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: none;
+
+}
+
+canvas {
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity:0.5;
+}
+
+input {
+    text-align: center;
+}

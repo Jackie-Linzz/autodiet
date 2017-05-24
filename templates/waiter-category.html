@@ -1,0 +1,40 @@
+
+{% extends 'main.html'%}
+
+{% block head%}
+<title>欢迎</title>
+<link rel="stylesheet" href="../static/css/waiter.css" />
+<link rel="stylesheet" href="../static/css/waiter-fix.css" />
+
+{% end %}
+
+{% block body%}
+
+
+  <div class="w-section c-header">
+    <div class="w-form form-wrapper">
+      <form class="w-clearfix c-header-form" id="email-form" name="email-form" data-name="Email Form">
+        <input class="w-input desk" id="desk" type="text" placeholder="桌号" name="desk" autofocus="autofocus" data-name="desk"><a class="button c-header-button" href="#">进入</a>
+      </form>
+
+    </div>
+    <div class="heading-wrapper">
+      <h3>Heading</h3><a class="button c-header-btn" href="#">退出</a>
+    </div>
+  </div>
+  <div class="w-section c-content">
+    <div class="c-item">
+      <h2 class="c-item-name">Heading</h2>
+      <h4 class="c-item-num">Heading</h4>
+    </div>
+  </div>
+  <div class="w-section w-clearfix c-footer">
+    <div class="c-footer-left"><a class="button c-footer-button-left" href="javascript:void(0)">返回</a>
+    </div>
+    <div class="c-footer-right"><a class="button c-footer-button-right" href="javascript:void(0)">我的点单</a>
+    </div>
+  </div>
+  <script src="/static/js/waiter-category.js"></script>
+
+
+{% end %}
